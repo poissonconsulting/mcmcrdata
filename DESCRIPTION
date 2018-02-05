@@ -6,14 +6,14 @@ Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c
 Description: Manipulates Monte Carlo Markov Chain samples and associated data frames.
 License: MIT + file LICENSE
 Depends:
-    R (>= 3.3.1),
-    dplyr
+    R (>= 3.3.1)
 Imports:
     abind,
-    mcmcr (>= 0.0.0.9040),
     checkr (>= 0.0.2.9002),
-    purrr,
+    dplyr,
+    mcmcr (>= 0.0.0.9040),
     plyr,
+    purrr,
     rlang,
     stats
 Suggests:
