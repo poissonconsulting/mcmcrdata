@@ -10,14 +10,11 @@ Depends:
     dplyr
 Imports:
     abind,
-    coda,
     mcmcr (>= 0.0.0.9040),
     checkr (>= 0.0.2.9002),
-    graphics,
     purrr,
     plyr,
     rlang,
-    reshape2,
     stats
 Suggests:
     covr,
