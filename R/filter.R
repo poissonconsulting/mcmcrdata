@@ -13,9 +13,9 @@ filter_mcmcarray <- function(x, idx) {
 #' @param .data An mcmcr_data object
 #' @export
 filter_.mcmcr_data <- function(.data, ..., .dots){
+  check_missing_colnames(.data$data, "IDX")
   data <- .data$data
 
-  stopifnot(!rlang::has_name(data, "IDX"))
   data$IDX <- 1:nrow(data)
   data <- dplyr::filter_(data, ..., .dots = .dots)
   .data$mcmcr[[1]] <- filter_mcmcarray(.data$mcmcr[[1]], data$IDX)

@@ -21,6 +21,7 @@ test_that("mcmcr_data", {
   mcmcr <- subset(mcmcr, parameters = "alpha")
 
   mcmcr_data <- mcmcr_data(mcmcr, data)
+  expect_true(is.mcmcr_data(mcmcr_data))
 
   coef <- coef(mcmcr_data)
 
@@ -28,7 +29,10 @@ test_that("mcmcr_data", {
   expect_identical(as.character(coef$term), c("alpha[1]", "alpha[2]"))
 
   expect_identical(as.data.frame(mcmcr_data), data)
-  expect_identical(as.mcmcr(mcmcr_data), mcmcr)
+  expect_identical(mcmcr::as.mcmcr(mcmcr_data), mcmcr)
+  
+  expect_equal(mcmcr::combine_values(mcmcr_data, mcmcr_data, by = c("col1", "col2")), mcmcr_data,
+               check.attributes = FALSE)
 
   mcmcr_data2 <- dplyr::filter(mcmcr_data, col1 == 1)
   coef2 <- coef(mcmcr_data2)
@@ -58,4 +62,8 @@ test_that("mcmcr_data", {
   expect_identical(colnames(coef1), c("col1", "term", "estimate", "sd", "zscore", "lower", "upper", "pvalue"))
   expect_identical(as.character(coef1$term), c("alpha[1]", "alpha[2]"))
   coef2 <- coef(dplyr::summarise(mcmcr_data2, .fun = function(x) 10))
+  
+  mcmcr_data2 <- dplyr::slice_(mcmcr_data, 1)
+  expect_identical(mcmcr::nterms(mcmcr_data$mcmcr), 2L)
+  expect_identical(mcmcr::nterms(mcmcr_data2$mcmcr), 1L)
 })
