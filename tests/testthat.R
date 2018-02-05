@@ -1,4 +1,4 @@
 library(testthat)
-library(mcmcr)
+library(mcmcrdata)
 
-test_check("mcmcr")
+test_check("mcmcrdata")

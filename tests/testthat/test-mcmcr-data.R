@@ -3,6 +3,8 @@ context("mcmcr-data")
 test_that("mcmcr_data", {
 
   data <- data.frame(col1 = 1:2, col2 = factor(1:2))
+  
+  mcmcr <- mcmcr:::mcmcr
 
   expect_error(mcmcr_data(mcmcr, data), "mcmcr must have just one parameter")
   expect_error(mcmcr_data(subset(mcmcr, parameters = "beta"), data), "mcmcr's parameter must be a vector")
@@ -13,6 +15,8 @@ test_that("mcmcr_data", {
 test_that("mcmcr_data", {
 
   data <- dplyr::data_frame(col1 = 1:2, col2 = 3)
+
+  mcmcr <- mcmcr:::mcmcr
 
   mcmcr <- subset(mcmcr, parameters = "alpha")
 

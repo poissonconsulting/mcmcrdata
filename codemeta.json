@@ -4,12 +4,12 @@
     "http://schema.org"
   ],
   "@type": "SoftwareSourceCode",
-  "identifier": "mcmcr",
-  "description": "Manipulates MCMC samples.",
-  "name": "mcmcr: Manipulate Monte Carlo Markov Chain Samples",
-  "datePublished": "2018-02-02",
+  "identifier": "mcmcrdata",
+  "description": "Manipulates Monte Carlo Markov Chain samples and associated data frames.",
+  "name": "mcmcrdata: Manipulate MCMC Samples and Data Frames",
+  "datePublished": "2018-02-03",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.0.9035",
+  "version": "0.0.0.9001",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -69,6 +69,23 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "coda",
+      "name": "coda",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "mcmcr",
+      "name": "mcmcr",
+      "version": "0.0.0.9040"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "checkr",
       "name": "checkr",
       "version": "0.0.2.9002",
@@ -86,19 +103,8 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "lazyeval",
-      "name": "lazyeval",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "magrittr",
-      "name": "magrittr",
+      "identifier": "purrr",
+      "name": "purrr",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -119,8 +125,8 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "purrr",
-      "name": "purrr",
+      "identifier": "rlang",
+      "name": "rlang",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -141,58 +147,14 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "rlang",
-      "name": "rlang",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "stats",
       "name": "stats"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "stringr",
-      "name": "stringr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "tidyr",
-      "name": "tidyr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
       "version": "3.3.1"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "coda",
-      "name": "coda",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
     },
     {
       "@type": "SoftwareApplication",
@@ -207,7 +169,7 @@
     }
   ],
   "contIntegration": "https://travis-ci.org/poissonconsulting/mcmcr",
-  "readme": "https://github.com/poissonconsulting/mcmcr/blob/master/README.md",
-  "fileSize": "308.025KB",
-  "codeRepository": "https://github.com/poissonconsulting/mcmcr"
+  "readme": "https://github.com/poissonconsulting/mcmcrdata/blob/master/README.md",
+  "fileSize": "72.406KB",
+  "codeRepository": "https://github.com/poissonconsulting/mcmcrdata"
 }
