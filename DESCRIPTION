@@ -8,12 +8,9 @@ License: MIT + file LICENSE
 Depends:
     R (>= 3.3.1)
 Imports:
-    abind,
     checkr (>= 0.0.2.9002),
     dplyr,
-    mcmcr (>= 0.0.0.9040),
-    plyr,
-    purrr,
+    mcmcr (>= 0.0.0.9045),
     stats
 Suggests:
     covr,
