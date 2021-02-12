@@ -1,15 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/joethorley/stability-badges#experimental)
-[![Travis-CI Build
-Status](https://travis-ci.org/poissonconsulting/mcmcrdata.svg?branch=master)](https://travis-ci.org/poissonconsulting/mcmcrdata)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/mcmcrdata?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/mcmcrdata)
-[![Coverage
-Status](https://img.shields.io/codecov/c/github/poissonconsulting/mcmcrdata/master.svg)](https://codecov.io/github/poissonconsulting/mcmcrdata?branch=master)
-[![License:
-MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Lifecycle: deprecated](https://img.shields.io/badge/lifecycle-deprecated-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#deprecated)
+[![License:MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # mcmcrdata
 
